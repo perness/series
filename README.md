@@ -1,12 +1,3 @@
-@page { margin: 0.79in }
-		h1 { margin-bottom: 0.08in }
-		h1.western { font-family: "Liberation Sans", sans-serif; font-size: 18pt }
-		h1.cjk { font-family: "Noto Sans CJK SC Regular"; font-size: 18pt }
-		h1.ctl { font-family: "Lohit Devanagari"; font-size: 18pt }
-		p { margin-bottom: 0.1in; line-height: 115% }
-		a:link { so-language: zxx }
-	
-
 **DokumentasjonNRK oppgave**
 
 ## Intro
