@@ -69,7 +69,6 @@ bruke følgende url for å hente data
 	all data for en gitt serieid og en gitt dato - [http://localhost:8080/seriesrest/api/series?](http://localhost:8080/seriesrest/api/series?seriesId)[seriesId](http://localhost:8080/seriesrest/api/series?seriesId)=’navn
 	på serie’&date=’valgt dato’ - Eksempel -
 	[http://localhost:8080/seriesrest/api/series?seriesId=martin-og-mikkelsen&date=20180105](http://localhost:8080/seriesrest/api/series?seriesId=martin-og-mikkelsen&date=20180105)
-	– gir svar  
 
 - For å hente alle
 	serieider og antall views -
