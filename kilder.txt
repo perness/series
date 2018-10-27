@@ -1,0 +1,2 @@
+read csv file => https://grokonez.com/kotlin/kotlin-read-write-csv-file-example
+where clause example => https://www.objectdb.com/java/jpa/query/jpql/comparison
