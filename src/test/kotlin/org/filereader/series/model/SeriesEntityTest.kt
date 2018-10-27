@@ -3,6 +3,7 @@ package org.filereader.series.model
 import org.filereader.series.Initializer
 import org.filereader.series.model.repository.SeriesRepository
 import org.junit.Assert.*
+import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.springframework.beans.factory.annotation.Autowired
@@ -19,11 +20,11 @@ class SeriesEntityTest
     @Autowired
     private lateinit var crud: SeriesRepository
 
-    /*@Before
+    @Before
     fun cleanDatabase()
     {
         crud.deleteAll()
-    }*/
+    }
 
     @Test
     fun testInit()

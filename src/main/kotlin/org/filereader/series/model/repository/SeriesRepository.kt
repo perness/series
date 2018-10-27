@@ -31,8 +31,6 @@ interface SeriesRepositoryCustom
 
     fun getAllOrderByDate() : List<SeriesEntity>
 
-    fun getAllSeriesAndViewsOrderedByDate() : List<Pair<String, Int>>
-
     fun getAllSeriesIdSeenOnTv() : List<SeriesEntity>
 
     fun getSeriesIdWithMostViews() : List<SeriesEntity>
@@ -71,20 +69,6 @@ class SeriesRepositoryImpl : SeriesRepositoryCustom
         return query.resultList
     }
 
-    override fun getAllSeriesAndViewsOrderedByDate(): List<Pair<String, Int>>
-    {
-        val query = em.createQuery("select s from SeriesEntity s order by s.date", SeriesEntity::class.java)
-        val list = query.resultList
-        val newList = mutableListOf<Pair<String, Int>>()
-
-        for ((index, value) in list.withIndex())
-        {
-            newList[index] = Pair(value.seriesId, value.views)
-        }
-
-        return newList
-    }
-
     override fun getAllSeriesIdSeenOnTv(): List<SeriesEntity>
     {
         val query = em.createQuery("select s from SeriesEntity s where s.screen = ?1", SeriesEntity::class.java)
@@ -99,17 +83,3 @@ class SeriesRepositoryImpl : SeriesRepositoryCustom
         return query.resultList
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
